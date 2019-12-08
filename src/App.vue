@@ -6,6 +6,7 @@
 
 <script>
 import Landing from './components/Landing'
+import axios from 'axios'
 export default {
   name: 'App',
 
@@ -16,5 +17,8 @@ export default {
   data: () => ({
     //
   }),
+ 
+ 
+ 
 };
 </script>
