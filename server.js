@@ -34,7 +34,7 @@ app.use(express.urlencoded({extended:true}));
 
 
 
-app.post("/api/post/new",(req,res) =>{
+app.post("https://enes-budak.herokuapp.com/api/post/new",(req,res) =>{
   let payload = {
       title:req.body.title,
       content:req.body.content,
@@ -52,7 +52,7 @@ app.post("/api/post/new",(req,res) =>{
 });
 
 
-app.get("/api/posts/all",(req,res,) =>{
+app.get("https://enes-budak.herokuapp.com/api/posts/all",(req,res,) =>{
     PostModel.find((err,result) =>{
         if(err) res.send({success:false,msg:err});
         res.send({success:true,result:result});
@@ -61,7 +61,7 @@ app.get("/api/posts/all",(req,res,) =>{
 });
 
 
-app.post("/api/post/update",(req,res) => {
+app.post("https://enes-budak.herokuapp.com/api/post/update",(req,res) => {
     let id = req.body._id;
     let payload = req.body;
     console.log(req.body);
@@ -73,7 +73,7 @@ app.post("/api/post/update",(req,res) => {
 
 });
 
-app.post("/api/post/remove", (req,res) =>{
+app.post("https://enes-budak.herokuapp.com/api/post/remove", (req,res) =>{
     let id = req.body._id;
     PostModel.findById(id).remove((err,result) =>{
         if(err) res.send({success:false,msg:err});
