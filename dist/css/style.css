@@ -1,0 +1,53 @@
+
+body {
+    font-family: 'Lexend Exa', sans-serif;
+  }
+  
+  .absolutely-centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #888;
+  }
+  
+  .links {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .link {
+    margin-bottom: 10px;
+    display: inline-block;
+    margin: 0px 15px 20px 15px;
+  }
+  
+  .title {
+    font-size: 30px;
+  }
+  .captions {
+    height: 150px;
+  }
+  .caption {
+    color: #555;
+    font-size: 20px;
+  }
+
+  
+  
+  
+  @media screen and (min-width: 768px){
+    .rwd-break { display: none; }
+  }
+  
+  
