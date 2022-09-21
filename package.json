@@ -14,7 +14,7 @@
     "express": "^4.17.1",
     "serve-static": "^1.14.1",
     "vue": "^2.6.10",
-    "vuetify": "^2.1.0"
+    "vuetify": "^2.6.10"
    
   },
   "devDependencies": {
